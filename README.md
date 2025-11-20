@@ -16,8 +16,8 @@ Use this tool to break down huge md files, so that agentic AI can manipulate it 
                        back into a single file, ordered by filename.
 
 ### EXAMPLES:
-  # Split a large document into smaller chapter files
+  * Split a large document into smaller chapter files
   ./breakmd.sh -break BigProject.md
 
-  # Reassemble the chapters back into a single document
+  * Reassemble the chapters back into a single document
   ./breakmd.sh -fix BigProject
