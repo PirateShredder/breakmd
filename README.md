@@ -6,7 +6,7 @@ A simple bash utility for splitting and reassembling markdown files based on hea
 
 `breakmd` helps you work with large markdown documents by splitting them into smaller, manageable files organized by headings. Each section becomes its own file with automatic navigation links between sections, making it easier to edit, reorganize, or process individual sections. A manifest file tracks all sections. When you're done, reassemble them back into a single document with navigation markers automatically removed.
 
-This tool was developed to enhance LLM / Obsidian Direcoties.
+This tool was developed to enhance LLM / Obsidian Directories.
 * https://code.claude.com/docs/en/setup
 * https://obsidian.md/download
 
