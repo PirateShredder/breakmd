@@ -19,10 +19,12 @@ chmod +x breakmd.sh
 
 ## Usage
 
+> **Note:** Short forms `-b` and `-f` are recommended. Long forms `--break` and `--fix` are also available.
+
 ### Split a markdown file
 
 ```bash
-./breakmd.sh --break yourfile.md
+./breakmd.sh -b yourfile.md
 ```
 
 This creates a directory named `yourfile/` containing:
@@ -46,7 +48,7 @@ Each split file contains:
 ### Reassemble split files
 
 ```bash
-./breakmd.sh --fix yourfile/
+./breakmd.sh -f yourfile/
 ```
 
 This creates `yourfile_reassembled.md` with all sections merged back together in order. Navigation markers are automatically removed, and the manifest file is excluded from the reassembly.
@@ -70,7 +72,7 @@ More detailed information.
 EOF
 
 # Split it
-./breakmd.sh --break example.md
+./breakmd.sh -b example.md
 
 # Output structure:
 # example/
@@ -81,7 +83,7 @@ EOF
 #   MANIFEST.md                (index of all files)
 
 # Reassemble it
-./breakmd.sh --fix example/
+./breakmd.sh -f example/
 
 # Creates: example_reassembled.md
 ```
